@@ -1,6 +1,5 @@
 package org.jenkinsci.plugins.udptrigger;
 
-import java.util.logging.Logger;
 import hudson.Extension;
 import hudson.model.BuildableItem;
 import hudson.model.Item;
@@ -38,6 +37,4 @@ public final class ListenerTrigger extends Trigger<BuildableItem> {
     }
 
   }
-  private static final Logger LOG
-          = Logger.getLogger ( ListenerTrigger.class.getName () );
 }

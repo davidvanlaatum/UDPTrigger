@@ -24,7 +24,7 @@ public class GlobalConfig extends Plugin {
           = Logger.getLogger ( GlobalConfig.class.getName () );
   private final transient Listener listener = new Listener ();
 
-  @Initializer ( after = InitMilestone.JOB_LOADED, fatal = true )
+  @Initializer ( after = InitMilestone.JOB_LOADED, fatal = false )
   public static void init () throws IOException, InterruptedException {
     Jenkins.getInstance ().getExtensionList ( Plugin.class )
             .get ( GlobalConfig.class ).listener.start ();
